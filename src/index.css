@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	font-family: 'Julius Sans One', Arial, sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: var(--gradientt);
+	background-size: 400%;
+	animation: bg-animation 33s infinite alternate;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+:root {
+	--gradientt: linear-gradient(90deg, #ffd89b, #19547b);
+}
+
+@keyframes bg-animation {
+	0% {
+		background-position: left;
+	}
+	50% {
+		background-position: right;
+	}
+	100% {
+		background-position: left;
+	}
+}
