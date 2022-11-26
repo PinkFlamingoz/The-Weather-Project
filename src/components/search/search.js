@@ -8,10 +8,7 @@ const Search = ({ onSearchChange }) => {
 	const [show, showSomething] = useState(true);
 
 	const loadOptions = (inputValue) => {
-		return fetch(
-			`${GEO_API_URL}/cities?minPopulation=500000&namePrefix=${inputValue}`,
-			geoApiOptions
-		)
+		return fetch(`${GEO_API_URL}/cities?minPopulation=500000&namePrefix=${inputValue}`, geoApiOptions)
 			.then((response) => response.json())
 			.then((response) => {
 				return {
@@ -33,9 +30,7 @@ const Search = ({ onSearchChange }) => {
 
 	return (
 		<div>
-			{show ? (
-				<img alt="weather" className="wea" src={`icons/unknown.svg`}></img>
-			) : null}
+			{show ? <img alt="weather" className="wea" src={`icons/unknown.svg`}></img> : null}
 			<AsyncPaginate
 				onMenuOpen={() => showSomething(false)}
 				placeholder="Search for city"
