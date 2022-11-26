@@ -29,7 +29,7 @@ const Forecast = ({ data }) => {
 							<div className="daily-details">
 								<div className="daily-details-item">
 									<label>Feels like:</label>
-									<label>{data.main.feels_like}°C</label>
+									<label>{Math.round(data.main.feels_like)}°C</label>
 								</div>
 								<div className="daily-details-item">
 									<label>Clouds:</label>
