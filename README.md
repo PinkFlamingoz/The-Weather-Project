@@ -2,7 +2,7 @@
  Weather forcast app with React JS, [Open Weather Map](https://openweathermap.org) and [GeoDBcities](https://rapidapi.com/wirefreethought/api/geodb-cities).
  
  ## How to run the app
-   1. Either fork or download the app and open the folder in your prefered IDE.
+   1. Either fork or download the app and open the folder in your preferred IDE.
    2. Install npm with the command `npm install -g npm`. [What is npm?](https://www.npmjs.com)
    3. Type in the console `npm run start`.
  
