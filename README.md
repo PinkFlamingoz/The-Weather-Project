@@ -14,5 +14,5 @@
 - Detailed weather forecast for the day and the coming days.
 
  ## How the app looks
-![alt text](https://github.com/PinkFlamingoz/The-Weather-Project/blob/main/ezgif-2-6d811ca962.gif)
+![alt text](https://github.com/PinkFlamingoz/The-Weather-Project/blob/main/ezgif-4-2af195b66b.gif)
 
