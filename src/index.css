@@ -1,20 +1,67 @@
 body {
-	margin: 0;
-	font-family: 'Julius Sans One', Arial, sans-serif !important;
+	margin: 20px;
+	font-family: 'Julius Sans One', Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-image: var(--gradientt);
+	background-image: var(--gradient);
 	background-size: 400%;
 	animation: bg-animation 33s infinite alternate;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
-}
-
 :root {
-	--gradientt: linear-gradient(90deg, #ffd89b, #19547b);
+	--gradient: linear-gradient(90deg, #ffd89b, #19547b);
+	/* LINKS TO SOCIALS */
+	--transition-speed: 0.3s;
+	--panel-bg-color: #f5f5f5;
+	--border-radius-large: 16px;
+	--dark-shadow-links: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
+	--dark-border-color: #0174ff;
+	--secondary-text-color: #97a5ce;
+	--links-close-button-font-size: 1.3rem;
+	--highlight-color: #fa8719;
+	--main-text-color: #f5f5f5;
+	--links-p-font-size: 0.89rem;
+	--primary-border-color: #dce1f2;
+	--border-radius-circle: 50%;
+	--links-a-font-size: 2rem;
+	--rainbow-animation: rainbow-animation 0.3s linear infinite;
+	--rainbow-gradient: linear-gradient(98deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ffff, #0000ff, #8b00ff);
+	--links-box-shadow-hover: 0 11px 12px 0 var(--border-highlight-color);
+	--rainbow-background-size: 500% 500%;
+	--border-radius-large: 16px;
+	--light-shadow: 0 16px 22px -11px #257be6;
+	--light-shadow-white: 0 16px 22px -11px #f5f5f5;
+	--links-button-font-size: 1rem;
+	/* LINKS TO SOCIALS */
+	/* CURRENT WEATHER */
+	--gradient-card: linear-gradient(90deg, #232526, #414345);
+	--weather-width: 500px;
+	--weather-border-radius: 6px;
+	--weather-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+	--weather-color: #fff;
+	--weather-margin: 20px auto 0 auto;
+	--weather-padding: 0 20px 20px 20px;
+	--weather-animation: slide-in 0.35s ease-in;
+	--weather-font-weight: 600;
+	--weather-font-weight-small: 400;
+	--weather-font-weight-smallest: 100;
+	--weather-font-size-city: 1.4rem;
+	--weather-font-size-description: 1.2rem;
+	--weather-font-size-temp: 5rem;
+	--weather-font-size-label: 1.2rem;
+	--weather-font-size-value: 1rem;
+	/* CURRENT WEATHER */
+	/* FORECAST */
+	--forecast-text-stroke: 1px black;
+	--forecast-main-text-color: #212121;
+	--forecast-highlight-color-orange: #eb5900;
+	--forecast-highlight-color-teal: #009fa3;
+	--forecast-daily-details-bg: #e6ddcc;
+	--forecast-font-size-title: 1.5rem;
+	--forecast-font-size-daily-item: 1rem;
+	--forecast-font-size-daily-item-small: 0.9rem;
+	--forecast-font-size-daily-item-details-small: 0.8rem;
+	/* FORECAST */
 }
 
 @keyframes bg-animation {
@@ -26,5 +73,20 @@ code {
 	}
 	100% {
 		background-position: left;
+	}
+}
+
+@keyframes rainbow-animation {
+	0% {
+		background-size: var(--rainbow-background-size);
+		background-position: 0% 30%;
+	}
+	50% {
+		background-size: var(--rainbow-background-size);
+		background-position: 100% 50%;
+	}
+	100% {
+		background-size: var(--rainbow-background-size);
+		background-position: 0% 50%;
 	}
 }

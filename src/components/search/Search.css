@@ -1,0 +1,22 @@
+.all-weather-icons {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20%;
+	transform: translate(-50%, -50%);
+	animation: fade-in 0.77s ease-in;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+.error-message {
+	text-align: center;
+	padding: 40px;
+}

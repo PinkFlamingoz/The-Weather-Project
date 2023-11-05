@@ -2,17 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/cloudy.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/cloudy.png" />
+  <!-- The character encoding set for the webpage -->
+  <meta charset="UTF-8">
+
+  <!-- Ensures proper rendering and touch zooming on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Compatibility with Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- JSON-LD structured data for better SEO about the software application represented by this page -->
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org/",
+      "@type": "SoftwareApplication",
+      "name": "The Weather",
+      "description": "Web site for reading weather forecast",
+      "applicationCategory": "Weather",
+      "operatingSystem": "All"
+  }
+  </script>
+
+  <!-- Meta tags for SEO and social media sharing enhancements -->
+  <title>The Weather</title>
+  <meta name="description" content="Web site for reading weather forecast" />
+  <meta name="keywords" content="weather, forecast, temperature, climate">
+  <meta name="author" content="Hristijan Stavrov">
+  <link rel="canonical" href="YOUR_FULL_PAGE_URL_HERE">
+
+  <!-- For sharing on Social Platforms -->
+  <meta property="og:title" content="The Weather">
+  <meta property="og:description" content="Web site for reading weather forecast.">
+  <meta property="og:image" content="/public/cloudy.png">
+  <meta name="twitter:card" content="/public/cloudy.png">
+
+  <!-- Favicon and theme colors for various platforms -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/public/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/public/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/public/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/public/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/public/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/public/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/public/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/public/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/public/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/public/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <meta name="msapplication-TileColor" content="#5455e2">
+  <meta name="msapplication-TileImage" content="/public/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#5455e2">
+
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,7 +72,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 
-  <title>The Weather</title>
+
 </head>
 
 <body>

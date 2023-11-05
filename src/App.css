@@ -1,4 +1,9 @@
-.container{
-  max-width: 1080px;
-  margin: 20px auto;
+.container {
+	max-width: 1080px;
+	margin: 20px auto;
+}
+.loading-message,
+.error-message {
+	text-align: center;
+	padding: 40px;
 }
